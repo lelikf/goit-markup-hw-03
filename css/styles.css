@@ -1,0 +1,269 @@
+:root {
+        --title-color: #2E2F42;
+        --main-light: #8E8F99;
+        --background: #FFFFFF;
+        --background-team: #F4F4FD;
+        --focused: #4D5AE5;
+        --main-color: #434455;
+        --success: #31D0AA;
+        --accent: #E7E9FC;
+        --order: #404BBF;
+}
+
+body {
+        font-family: "Roboto", sans-serif;
+        color: var(--main-color);
+        letter-spacing: 0.02em;
+        background-color: var(--background);
+        position: relative;
+        width: 1440px;
+        height: 2593px;
+}
+
+.list {
+        list-style: none;
+}
+/* logo */
+.logo {
+        text-decoration: none;
+        letter-spacing: 0.03em;
+}
+.logo .logo-web {
+        font-family: "Raleway";
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        text-transform: uppercase;
+        color: var(--focused);
+}
+.logo .logo-studio {
+        font-family: "Raleway";
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        text-transform: uppercase;
+        color: var(--title-color);
+}
+.logo .logo-wite {
+        font-family: "Raleway";
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        text-transform: uppercase;
+        color: var(--background);
+}
+/* hidden */
+.visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+}
+/* naigation */
+
+.nav-list .nav-link {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--title-color);
+}
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus {
+        color: var(-main-color);
+}
+.nav-list .nav-link:active  {
+        color: var(--focused);
+}
+
+.nav-list .nav-link.active {
+        color: var(--focused);
+}
+/* contacts */
+.mail,
+.tel {
+        text-decoration: none;
+        font-style: normal;
+        line-height: 1.5;
+        color: var(--main-color);
+}
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+        color: var(--focused);
+}
+/* header */
+.page-header {
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+/* .hero */
+.hero {
+        background: var(--title-color);
+}
+.hero-title {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--background);
+}
+/* .buttons */
+.button-order {
+        width: 170px;
+        height: 51px;
+        left: 20px;
+        top: 20px;
+        background: var(--focused);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+.button-order .order-text {
+        font-weight: 600;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--background);              
+}
+.button-order:hover {
+        width: 170px;
+        height: 51px;
+        left: 20px;
+        top: 20px;
+        background: var(--focused);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 4px;
+}
+.button-order:active {
+        width: 170px;
+        height: 51px;
+        left: 20px;
+        top: 156px;
+        background: var(--order);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+/* features */
+.features-list .feature-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--title-color);
+}
+.features-list .feature-text {
+        line-height: 1.5;                      
+}
+/* about */
+.directions .our-directions{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        text-transform: capitalize;
+        color: var(--title-color);
+}
+/* team */
+.team {
+        background: var(--background-team);
+}
+.team .about-team {
+        width: 264px;
+        height: 380px;
+        left: 156px;
+        top: 1783px;
+        background: var(--background);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+}
+.team .team-title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        text-transform: capitalize;
+        color: var(--title-color);
+}
+.team-list .team-members {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        /* text-align: center; */
+        color: var(--title-color);
+}
+.team-list .position {                 
+        line-height: 1.5;
+        /* text-align: center; */
+}
+/* portfolio */
+.portfolio-buttons {
+        list-style: none;
+        font-family: inherit;
+}
+.portfolio-buttons .portfolio-button {
+        width: 116px;
+        height: 48px;
+        background: var(--background-team);
+        border: 1px solid; 
+        border-color: var(--accent);
+        border-radius: 4px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;                 
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--focused);
+}
+.portfolio-buttons .portfolio-button:hover {
+        background-color: var(--focused);
+        color: var(--background);
+}     
+.projects-list .project {
+        width: 360px;
+        height: 420px;
+        left: 156px;
+        top: 288px;
+        background: var(--background);       
+        border: 0.5px solid;
+        border-color: var(--background-team);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projects-list .project-link {
+        text-decoration: none;
+        width: 360px;
+        height: 300px;
+        left: 0px;
+        top: 0px;                        
+        background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1));
+        background-blend-mode: soft-light,
+        normal;
+        mix-blend-mode: normal;
+}
+.projects-list .project-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--title-color);
+}
+.projects-list .project-direction {
+        line-height: 1.5;
+        color: var(--main-color);
+}
+ /* footer */
+.footer .slogan {
+        line-height: 1.5;
+        color: var(--accent);
+}
+.footer {
+        background: var(--title-color);
+ }
+

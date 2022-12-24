@@ -9,22 +9,23 @@
         --accent: #E7E9FC;
         --order: #404BBF;
 }
-
-* {
+html {
         box-sizing: border-box;
 }
-
+*,
+*::before,
+*::after {
+        box-sizing: border-box;
+}
 body {
         font-family: "Roboto", sans-serif;
         color: var(--main-color);
         letter-spacing: 0.02em;
         background-color: var(--background);
 }
-
 .list {
         list-style: none;
 }
-
 /* logo */
 .logo {
         text-decoration: none;
@@ -61,9 +62,7 @@ body {
         margin: -1px;
 }
 /* naigation */
-
 .nav-list {
-        
         display: flex;
         flex-direction: row;
         gap: 40px;
@@ -103,8 +102,6 @@ body {
 
         display: flex;
 }
-
-
 .tel {
         font-weight: 400;
         font-size: 16px;

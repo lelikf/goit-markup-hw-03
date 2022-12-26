@@ -204,7 +204,10 @@ ul {
 }
 /* features */
 .features {
-        margin-bottom: 120px;            
+        margin-bottom: 120px;
+}
+.feature:not(:last-child) {
+        margin-right: 24px;      
 }
 .features-list {
         display: flex;
@@ -220,11 +223,6 @@ ul {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
-
-        justify-content: space-between;
-        /* gap: 24px; */
-
-        
 }
 /* about */
 .directions {
@@ -238,14 +236,14 @@ ul {
         text-align: center;
         text-transform: capitalize;
         color: var(--title-color);
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
-/* team */
 .about-list {
         display: flex;
         justify-content: space-between;
-        gap: 24px;
+        gap: 24px; 
 }
+/* team */
 .team {
         background: var(--background-team);
         display: block;

@@ -290,13 +290,21 @@ ul {
         text-align: center;
 }
 /* portfolio */
-.buttons {
-        padding-bottom: 120px;
+
+.page-header.portfolio {
+        margin-bottom: 96px;
 }
 .portfolio-buttons {
-        list-style: none;  
-        margin-top: 96px;
-        margin-bottom: 72px;
+        list-style: none;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 72px;
+
+        margin: 0 auto;
+        gap: 24px;
+        
 }
 .portfolio-buttons .portfolio-button {
         font-family: inherit;
@@ -312,21 +320,27 @@ ul {
         text-align: center;
         letter-spacing: 0.04em;
         color: var(--focused);
+
+        display: block;
+        margin: 0 auto;
+        padding: 12px 24px;
    
 }
 .portfolio-buttons .portfolio-button:hover {
         background-color: var(--focused);
         color: var(--background);
-}     
+}  
+.projects-list {
+        display: flex;
+        flex-wrap: wrap;
+}
 .projects-list .project {
-        /* width: 360px;
-        height: 420px;
-        left: 156px;
-        top: 288px; */
+        width: 360px;
         background: var(--background);       
         border: 0.5px solid;
         border-color: var(--background-team);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+       
 }
 .projects-list .project-link {
         text-decoration: none;
@@ -335,13 +349,15 @@ ul {
         normal;
         mix-blend-mode: normal;
 
-        display: block;
+        display: block;      
 }
 .projects-list .project-title {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
         color: var(--title-color);
+
+        margin-bottom: 8px;
 }
 .projects-list .project-direction {
         font-weight: 400;
@@ -352,10 +368,14 @@ ul {
 .projects-content {
         border: 1px solid color: var(--accent);
         border-top: none;
+
+        margin-top:32px;
 }
  /* footer */
 .footer {
         display: block;
+        padding-top: 100px;
+        padding-bottom: 100px;
 }
 .logo.footer {
         padding-top: 100px;
@@ -363,11 +383,7 @@ ul {
 }
 .footer .slogan {
         line-height: 1.5;
-        color: var(--accent);
-
-        padding-right: 1020px;
-        padding-bottom: 100px;
-        padding-left: 156px;
+        color: var(--accent);       
 
         align-items: flex-start;
 }

@@ -11,11 +11,11 @@
 }
 html {
         box-sizing: border-box;
-}
+/* }
 *,
 *::before,
 *::after {
-        box-sizing: border-box;
+        box-sizing: border-box; */
 }
 body {
         font-family: "Roboto", sans-serif;
@@ -31,7 +31,19 @@ body {
         padding-right: 15px;
 }
 .list {
-        list-style: none;
+        list-style: none;        
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+        padding: 0;
+        margin: 0;
 }
 /* logo */
 .logo {
@@ -47,7 +59,7 @@ body {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        margin-left: 156px;
+        /* margin-left: 156px; */
 }
 .logo .logo-studio {
         color: var(--title-color);
@@ -146,72 +158,69 @@ body {
 
         display: block;
         text-align: center;
-        padding-top: 192px;
-        padding-bottom: 192px;
+           
+        padding-top: 188px;
+        padding-bottom: 188px;
+        margin-bottom: 120px;
 }
 .hero-title {
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
-        text-align: center;
         letter-spacing: 0.02em;
         color: var(--background);
 
+        margin: 0px 300px 48px;
+        /* margin-bottom: 48px;        */
         
-        padding-right: 474px;
-        padding-left: 474px;
-       
-        margin-bottom: 48px;
+        /* background-color: black; */
+
 }
 /* .buttons */
 
-.button { 
-        padding-left: 635px;
-        padding-right: 635px;
-}
 .button-order {
         cursor: pointer;
-        width: 170px;
-        height: 51px;
+        min-width: 169px;
+        height: 56px;
         background: var(--focused);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-
-        font-family: inherit;
-        font-weight: 500;
-        line-height: 1.5;
+        border-radius: 4px;       
+        font-weight: 500;        
         text-align: center;
         letter-spacing: 0.04em;
         color: var(--background);
+
+        padding: 16px 32px;
+        font-family: inherit;
+        line-height: 1.5;
 }
 .button-order:hover {
-        width: 170px;
-        height: 51px;
+        min-width: 169px;
+        height: 56px;
         background: var(--focused);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 4px;
 }
 .button-order:active {
-        width: 170px;
-        height: 51px;
+        min-width: 169px;
+        height: 56px;
         background: var(--order);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 }
 /* features */
+.features {
+        margin-bottom: 120px;            
+}
 .features-list {
         display: flex;
-        
-        padding-left: 156px;
-        padding-right: 156px;
-        padding-top: 120px;
-        padding-bottom: 120px;
 }
 .features-list .feature-title {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
         color: var(--title-color);
+        margin-bottom: 8px;
 }
 .features-list .feature-text {
         font-weight: 400;
@@ -219,14 +228,13 @@ body {
         line-height: 1.5;
 
         justify-content: space-between;
-        gap: 24px;
+        /* gap: 24px; */
+
         
 }
 /* about */
 .directions {
         display: block;
-        padding-left: 156px;
-        padding-right: 156px;
         padding-bottom: 120px;
 }
 .directions .our-directions{
@@ -236,15 +244,13 @@ body {
         text-align: center;
         text-transform: capitalize;
         color: var(--title-color);
+        padding-bottom: 72px;
 }
 /* team */
 .about-list {
         display: flex;
         justify-content: space-between;
         gap: 24px;
-
-        padding-right: 156px;
-        padding-left: 156px;
 }
 .team {
         background: var(--background-team);
@@ -261,10 +267,6 @@ body {
         text-align: center;
         text-transform: capitalize;
         color: var(--title-color);
-
-        padding-top: 120px;
-        padding-right: 639px;
-        padding-left: 639px;
 
         margin-bottom: 72px;
 }
@@ -293,8 +295,13 @@ body {
         text-align: center;
 }
 /* portfolio */
+.buttons {
+        padding-bottom: 120px;
+}
 .portfolio-buttons {
-        list-style: none;             
+        list-style: none;  
+        margin-top: 96px;
+        margin-bottom: 72px;
 }
 .portfolio-buttons .portfolio-button {
         font-family: inherit;
@@ -310,6 +317,7 @@ body {
         text-align: center;
         letter-spacing: 0.04em;
         color: var(--focused);
+   
 }
 .portfolio-buttons .portfolio-button:hover {
         background-color: var(--focused);

@@ -45,6 +45,11 @@ ul {
         padding: 0;
         margin: 0;
 }
+
+/* navigation */
+.container.nav {
+        display: flex;
+}
 /* logo */
 .logo {
         text-decoration: none;
@@ -80,6 +85,9 @@ ul {
         clip-path: inset(50%);
         margin: -1px;
 }
+.logo-link {
+        display: block;
+}
 /* naigation */
 .nav-list {
         display: flex;   
@@ -90,8 +98,11 @@ ul {
         font-size: 16px;
         line-height: 1.5;
         color: var(--title-color);
+        
+        display: block;
         padding-top: 24px;
-        padding-bottom: 24px;      
+        padding-bottom: 24px;
+
 }
 .nav-item:not(:last-child) {
         margin-right: 40px;
@@ -107,6 +118,10 @@ ul {
         color: var(--focused);
 }
 /* contacts */
+.cotacts {
+        display: flex;
+        margin: 0 auto;
+}
 .mail {
         font-weight: 400;
         font-size: 16px;
@@ -115,7 +130,9 @@ ul {
         line-height: 1.5;
         color: var(--main-color);
 
-        display: flex;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 40px;
 }
 .tel {
         font-weight: 400;
@@ -125,10 +142,8 @@ ul {
         line-height: 1.5;
         color: var(--main-color);
 
-        display: flex;
-        
-        margin-right:156px;
-        margin-left: 40px;
+        padding-top: 24px;
+        padding-bottom: 24px;               
 }
 .mail:hover,
 .mail:focus,
@@ -136,7 +151,9 @@ ul {
 .tel:focus {
         color: var(--focused);
 }
-
+.container.nav {
+        display: flex;
+}
 /* header */
 .page-header {
         align-items: center;

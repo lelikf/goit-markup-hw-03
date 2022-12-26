@@ -56,10 +56,10 @@ ul {
         text-transform: uppercase;
         color: var(--focused);
 
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         align-items: flex-start;
-        /* margin-left: 156px; */
+        margin-left: 156px; */
 }
 .logo .logo-studio {
         color: var(--title-color);
@@ -82,15 +82,7 @@ ul {
 }
 /* naigation */
 .nav-list {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-
-        width: 261px;
-        height: 24px;
-       
-        margin-right:331px;
-        margin-left: 77px; 
+        display: flex;   
 }
 .nav-link {
         text-decoration: none;
@@ -98,6 +90,11 @@ ul {
         font-size: 16px;
         line-height: 1.5;
         color: var(--title-color);
+        padding-top: 24px;
+        padding-bottom: 24px;      
+}
+.nav-item:not(:last-child) {
+        margin-right: 40px;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -106,7 +103,6 @@ ul {
 .nav-link:active  {
         color: var(--focused);
 }
-
 .nav-link.active {
         color: var(--focused);
 }
@@ -254,6 +250,7 @@ ul {
 }
 .team {
         background: var(--background-team);
+        display: block;
 }
 .about-team {
         background: var(--background);
@@ -339,6 +336,8 @@ ul {
         background-blend-mode: soft-light,
         normal;
         mix-blend-mode: normal;
+
+        display: block;
 }
 .projects-list .project-title {
         font-weight: 700;
@@ -351,6 +350,10 @@ ul {
         font-size: 16px;
         line-height: 1.5;
         color: var(--main-color);
+}
+.projects-content {
+        border: 1px solid color: var(--accent);
+        border-top: none;
 }
  /* footer */
 .footer {

@@ -250,13 +250,17 @@ ul {
 }
 /* team */
 .team {
-        background: var(--background-team);
-        display: block;
+        background: var(--background-team);        
 }
 .about-team {
         background: var(--background);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
+
+        padding-bottom: 32px;
+}
+.about-team:not(:last-child) {
+        margin-right: 24px;
 }
 .team-title {
         font-weight: 700;
@@ -268,13 +272,15 @@ ul {
 
         margin-bottom: 72px;
 }
+.team-img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 32px;
+}
 .team-list {
         display: flex;
         justify-content: center;
-        gap: 24px;
-
-        padding-right: 156px;
-        padding-left: 156px;
+                
         padding-bottom: 120px;
 }
 .team-members {
@@ -284,7 +290,7 @@ ul {
         color: var(--title-color);
 
         text-align: center;
-        
+        margin-bottom: 8px;      
 }
 .position {
         font-weight: 400;

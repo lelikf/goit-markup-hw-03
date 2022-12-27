@@ -37,6 +37,7 @@ h6,
 p,
 ul {
         margin: 0;
+        padding: 0;
 }
 
 img {
@@ -118,29 +119,39 @@ img {
 .contacts {
         display: flex;
         margin-left: auto;
-}
-.mail {
+
         font-weight: 400;
         font-size: 16px;
-        text-decoration: none;
         font-style: normal;
         line-height: 1.5;
         color: var(--main-color);
 
         padding-top: 24px;
         padding-bottom: 24px;
+}
+.contacts-item:not(:last-child) {
         margin-right: 40px;
 }
-.tel {
+.mail {
+        text-decoration: none;
+
         font-weight: 400;
         font-size: 16px;
-        text-decoration: none;
         font-style: normal;
         line-height: 1.5;
         color: var(--main-color);
-
-        padding-top: 24px;
-        padding-bottom: 24px;               
+        
+        /* margin-right: 40px; */
+}
+.tel {
+        text-decoration: none;
+        
+        font-weight: 400;
+        font-size: 16px;
+        /* text-decoration: none; */
+        font-style: normal;
+        line-height: 1.5;
+        color: var(--main-color);
 }
 .mail:hover,
 .mail:focus,
@@ -159,13 +170,10 @@ img {
 /* .hero */
 .hero {
         background: var(--title-color);
-
-        display: block;
+     
         text-align: center;
-           
         padding-top: 188px;
         padding-bottom: 188px;
-        margin-bottom: 120px;
 }
 .hero-title {
         max-width: 500px;
@@ -211,14 +219,20 @@ img {
         border-radius: 4px;
 }
 /* features */
+
 .features {
-        margin-bottom: 120px;
-}
-.feature:not(:last-child) {
-        margin-right: 24px;      
+        padding: 120px;
 }
 .features-list {
         display: flex;
+        flex-wrap: wrap;
+}
+.feature {
+        width: calc((100% - 72px) / 4);
+        margin-right: 24px;
+}
+.feature:nth-child(4n) {
+        margin: 0;
 }
 .features-list .feature-title {
         font-weight: 700;
@@ -400,8 +414,9 @@ img {
         line-height: 1.5;
         color: var(--accent);       
 
-        align-items: start;
+        Text-align: left;
         margin-top: 16px;
+        margin-bottom: 0;
 }
 .footer {
         background: var(--title-color);

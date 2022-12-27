@@ -226,10 +226,9 @@ ul {
 }
 /* about */
 .directions {
-        display: block;
         padding-bottom: 120px;
 }
-.directions .our-directions{
+.our-directions{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -241,7 +240,13 @@ ul {
 .about-list {
         display: flex;
         justify-content: space-between;
-        gap: 24px; 
+}
+.directions-img {
+        display: block;
+        margin: 0 auto;
+}
+.directions-item:not(:last-child) {
+        margin-right: 24px;
 }
 /* team */
 .team {
@@ -332,6 +337,7 @@ ul {
 .projects-list {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 120px;
 }
 .projects-list .project {
         width: 360px;
@@ -339,7 +345,10 @@ ul {
         border: 0.5px solid;
         border-color: var(--background-team);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-       
+        margin-right: 24px;       
+}
+.projects-list .project:nth-child(3n) {
+        margin-right: 0;
 }
 .projects-list .project-link {
         text-decoration: none;
@@ -350,6 +359,7 @@ ul {
 
         display: block;      
 }
+
 .projects-list .project-title {
         font-weight: 700;
         font-size: 20px;

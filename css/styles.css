@@ -272,7 +272,8 @@ img {
 }
 /* team */
 .team {
-        background: var(--background-team);        
+        background: var(--background-team);
+        padding-bottom: 120px;
 }
 .about-team {
         background: var(--background);
@@ -301,9 +302,7 @@ img {
 }
 .team-list {
         display: flex;
-        justify-content: center;
-                
-        padding-bottom: 120px;
+        justify-content: center;  
 }
 .team-members {
         font-weight: 700;
@@ -322,8 +321,9 @@ img {
 }
 /* portfolio */
 
-.page-header.portfolio {
-        margin-bottom: 96px;
+.buttons {
+        padding-top: 96px;
+        padding-bottom: 120px;
 }
 .portfolio-buttons {
         list-style: none;
@@ -331,7 +331,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 .portfolio-buttons .portfolio-button {
         font-family: inherit;
@@ -361,22 +361,22 @@ img {
 .projects-list {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 120px;
 }
 .projects-list .project {
-        width: 360px;
+        width: calc((100% - 48px) / 3);
         background: var(--background);       
-        border: 0.5px solid;
-        border-color: var(--background-team);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
         
-        margin-right: 24px;
-        padding-bottom: 32px;
+        margin-right: 24px;      
         margin-bottom: 48px;
 }
 .projects-list .project:nth-child(3n) {
-        margin-right: 0;
+        margin-right: 0;        
 }
+.projects-list .project:nth-last-child(-n+3) {
+        margin-bottom: 0;
+}
+/* margin-bottom: 0; */
 .projects-list .project-link {
         text-decoration: none;
         background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1));
@@ -406,10 +406,13 @@ img {
         margin-left: 16px;
 }
  /* footer */
-.footer .container {
+.footer {
         padding-top: 100px;
         padding-bottom: 100px;
 }
+.footer .logo {
+        padding: 0;
+} 
 .footer .slogan {
         line-height: 1.5;
         color: var(--accent);       

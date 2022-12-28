@@ -365,8 +365,7 @@ img {
 .projects-list .project {
         width: calc((100% - 48px) / 3);
         background: var(--background);       
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-        
+                
         margin-right: 24px;      
         margin-bottom: 48px;
 }
@@ -399,11 +398,12 @@ img {
         color: var(--main-color);
 }
 .projects-content {
-        border: 1px solid color: var(--accent);
+        border: 1px solid var(--accent);
         border-top: none;
 
-        margin-top: 32px;
-        margin-left: 16px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 16px;
 }
  /* footer */
 .footer {
@@ -417,7 +417,7 @@ img {
         line-height: 1.5;
         color: var(--accent);       
 
-        Text-align: left;
+        text-align: left;
         margin-top: 16px;
         margin-bottom: 0;
 }

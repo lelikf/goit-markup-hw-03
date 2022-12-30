@@ -125,9 +125,6 @@ img {
         font-style: normal;
         line-height: 1.5;
         color: var(--main-color);
-
-        padding-top: 24px;
-        padding-bottom: 24px;
 }
 .contacts-item:not(:last-child) {
         margin-right: 40px;
@@ -140,18 +137,24 @@ img {
         font-style: normal;
         line-height: 1.5;
         color: var(--main-color);
+
         
-        /* margin-right: 40px; */
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 .tel {
         text-decoration: none;
         
         font-weight: 400;
         font-size: 16px;
-        /* text-decoration: none; */
         font-style: normal;
         line-height: 1.5;
         color: var(--main-color);
+
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 .mail:hover,
 .mail:focus,
@@ -220,7 +223,8 @@ img {
 }
 /* features */
 .features {
-        padding: 120px;
+        padding-top: 120px;
+        padding-bottom: 120px;
 }
 .features-list {
         display: flex;
@@ -273,6 +277,7 @@ img {
 .team {
         background: var(--background-team);
         padding-bottom: 120px;
+        padding-top: 120px;
 }
 .about-team {
         background: var(--background);
@@ -347,7 +352,6 @@ img {
         letter-spacing: 0.04em;
         color: var(--focused);
 
-        display: block;
         padding: 12px 24px;      
 }
 .button-list:not(:first-child) {
@@ -356,6 +360,7 @@ img {
 .portfolio-buttons .portfolio-button:hover {
         background-color: var(--focused);
         color: var(--background);
+        border-color: transparent;
 }  
 .projects-list {
         display: flex;
@@ -376,11 +381,7 @@ img {
 }
 /* margin-bottom: 0; */
 .projects-list .project-link {
-        text-decoration: none;
-        background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1));
-        background-blend-mode: soft-light,
-        normal;
-        mix-blend-mode: normal;        
+        text-decoration: none;      
 }
 .projects-list .project-title {
         font-weight: 700;
